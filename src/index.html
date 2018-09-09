@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<title>R3m1tly :: Projects :: RoviSoft.net</title>
+
+		<link href="./assets/style/main.css" rel="stylesheet" type="text/css" />
+
+	</head>
+
+
+	<body>
+
+		<h1>R3m1tly Rate Exchange</h1>
+
+		<h2>USD to MXN</h2>
+
+		Filter by the last:
+		<button id="lastAllDays">All days</button>
+		<button id="last7Days">7 days</button>
+		<button id="last15Days">15 days</button>
+		<button id="last30Days">1 month</button>
+		<button id="last60Days">2 Months</button>
+		<button id="last90Days">3 Months</button>
+		<button id="last180Days">6 Months</button>
+		<button id="last365Days">1 year</button>
+		<div id="chartsPerDay"></div>
+		
+		<h2>Today Rate</h2>
+
+		<div class="todayInformation">
+			<strong>Last record:</strong> <span id="todayDatetime"></span>
+			<span class="largeSpaceInDesktop"></span>
+			<span class="spaceInMobile"></span>
+
+			<strong>Rate exchange:</strong> $<span id="todayAmmount"></span> MXN
+
+			<br><br>
+
+
+			<strong>Highest:</strong> $<span id="todayHighest"></span>
+			<span class="shortSpaceInDesktop"></span>
+			<span class="spaceInMobile"></span>
+
+			<strong>Average:</strong> $<span id="todayAverage"></span>
+			<span class="shortSpaceInDesktop"></span>
+			<span class="spaceInMobile"></span>
+
+			<span class="displaySpaceOnlyInMobile">&nbsp;&nbsp;</span>
+			<strong>Lowest:</strong> $<span id="todayLowest"></span>
+			<span class="shortSpaceInDesktop"></span>
+			<span class="spaceInMobile"></span>
+
+			<strong>Constant:</strong> $<span id="todayConstant"></span><br><br>
+
+
+			<strong>UTC now:</strong> <span id="todayUTCDate"></span><br>
+			&nbsp;&nbsp;<strong>My time:</strong> <span id="todayDate"></span><br>
+			<strong>Hours diff:</strong> <span id="hoursDiff"></span>
+		</div>
+
+
+		<!--script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script-->
+		<script type="text/javascript" src="./assets/javascript/google-charts/loader.js"></script>
+
+		<script type="text/javascript" src="./resources/jsArray/perDay.js"></script>
+
+		<script type="text/javascript" src="./resources/jsArray/today.js"></script>
+
+		<script type="text/javascript" src="./assets/javascript/main.js"></script>
+
+	</body>
+
+</html>
